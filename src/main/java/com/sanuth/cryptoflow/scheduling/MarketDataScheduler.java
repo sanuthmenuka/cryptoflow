@@ -23,7 +23,7 @@ public class MarketDataScheduler {
         this.redisService=redisService;
         this.stringRedisTemplate=stringRedisTemplate;
     }
-    @Scheduled(fixedRate = 30000)
+    @Scheduled(fixedRate = 60000,initialDelay = 10000)
     public void scheduleData(){
 //        if(!uiLoaded){
 //            return;
